@@ -3,9 +3,32 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>IBGE</title>
 </head>
 <body>
-    
+    <h1>Pesquisa IBGE</h1>
+    Qual País você nasceu? <input type="text" name="txtper" id="txtper">
+    <input type="button" value="Pesquisar" onclick="verificar()">
+
+    <div id="naci">
+
+    </div>
+
+    <script>
+        function verificar() {
+            var txtp = window.document.querySelector("input#txtper")
+            var res = window.document.querySelector("div#naci")
+
+            res.innerHTML = `<p>Seu país é <strong>${txtp.value}</strong></p>`
+            
+            if (txtp.value != "Brasil") {
+                res.innerHTML += `<p>Você é <strong>ESTRANGEIRO</strong></p>`
+            }else {
+                res.innerHTML += `<p>Vocẽ é <strong>BRASILEIRO</strong></p>`
+            }
+            
+            res.innerHTML += `<p><strong>BEM-VINDO</strong></p>`
+        }
+    </script>
 </body>
 </html>
