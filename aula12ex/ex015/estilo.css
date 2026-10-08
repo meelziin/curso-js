@@ -24,8 +24,18 @@ section {
     box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.267);
 }
 
-div {
+input#txtano {
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid gray;
+}
 
+input#botao-verificar {
+    padding: 5px;
+}
+
+.botao:hover {
+    cursor: pointer;
 }
 
 footer {
