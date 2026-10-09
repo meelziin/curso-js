@@ -2,12 +2,12 @@
 3 Formas simples de fazer 
 
 * basico
-    console.log("Passo 1")
-    console.log("Passo 2")
-    console.log("Passo 3")
-    console.log("Passo 4")
-    console.log("Passo 5")
-    console.log("Passo 6")
+    console.log("Passo 1 de 6")
+    console.log("Passo 2 de 6")
+    console.log("Passo 3 de 6")
+    console.log("Passo 4 de 6")
+    console.log("Passo 5 de 6")
+    console.log("Passo 6 de 6")
 
 * Repetição com teste logico no começo    
     while(c <= 6) {
